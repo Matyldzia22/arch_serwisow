@@ -3,11 +3,11 @@
 one:
   name: MyString
   country: MyString
-  city: MyString
   style: MyString
+  photo: MyString
 
 two:
   name: MyString
   country: MyString
-  city: MyString
   style: MyString
+  photo: MyString

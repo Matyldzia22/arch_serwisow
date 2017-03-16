@@ -1,0 +1,20 @@
+<h1>All builds :</h1>
+ <%= link_to 'New build', new_build_path %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Style</th>
+    <th>Photo</th>
+  </tr>
+ 
+  <% @builds.each do |build| %>
+    <tr>
+      <td><%= build.name %></td>
+      <td><%= build.country %></td>
+      <td><%= build.style %></td>
+      <td><%= build.photo %></td>
+      <td><%= link_to 'Show', build_path(build) %></td>
+    </tr>
+  <% end %>
+</table>

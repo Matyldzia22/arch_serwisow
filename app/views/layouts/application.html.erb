@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Builds</title>
+    <title>Architektura</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,20 +9,6 @@
   </head>
 
   <body>
-
-  <div class="navbar navbar-inverse navbar-fixed-top">
-        <%= link_to "Architecture", { :controller => 'welcome'}, :class => 'navbar-brand'%>
-        <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><%= link_to 'All builds', { :controller => 'buildings'} %></li>
-                </ul>
-        </div>
-
-  </div>
-
-  <div class="container modal-content">
-
     <%= yield %>
-    </div>
   </body>
 </html>

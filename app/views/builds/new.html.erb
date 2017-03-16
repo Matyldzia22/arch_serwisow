@@ -1,7 +1,6 @@
-<h1 class="text-center">New Build</h1>
-<div class="text-center">
+<h1>New Build</h1>
 
-<%= form_for :build, url: buildings_path do |f| %>
+<%= form_for :build, url: builds_path do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -12,19 +11,18 @@
     <%= f.text_area :country %>
   </p>
 
-  <p>
-    <%= f.label :city %><br>
-    <%= f.text_area :city %>
-  </p>
-
-  <p>
+   <p>
     <%= f.label :style %><br>
     <%= f.text_area :style %>
+  </p>
+
+   <p>
+    <%= f.label :photo %><br>
+    <%= f.text_area :photo %>
   </p>
  
   <p>
     <%= f.submit %>
   </p>
-
 <% end %>
-  </div>
+<%= link_to 'Back', builds_path %>
