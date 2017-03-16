@@ -1,0 +1,30 @@
+<h1 class="text-center">New Build</h1>
+<div class="text-center">
+
+<%= form_for :build, url: buildings_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :country %><br>
+    <%= f.text_area :country %>
+  </p>
+
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_area :city %>
+  </p>
+
+  <p>
+    <%= f.label :style %><br>
+    <%= f.text_area :style %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+  </div>
