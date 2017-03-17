@@ -1,3 +1,4 @@
+
 <%= form_for @build do |f| %>
  
   <% if @build.errors.any? %>
@@ -13,29 +14,32 @@
       </ul>
     </div>
   <% end %>
- 
- <p>
+ <table class="table">
+ <div class="text-center">
+ <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
+    <%= f.text_area :name %>
+  </div>
  
-  <p>
+  <div class="field">
     <%= f.label :country %><br>
     <%= f.text_area :country %>
-  </p>
+  </div>
 
-  <p>
+  <div class="field">
     <%= f.label :style %><br>
     <%= f.text_area :style %>
-  </p>
+  </div>
 
-  <p>
+  <div class="field">
     <%= f.label :photo %><br>
     <%= f.text_area :photo %>
-  </p>
+  </div>
  
-  <p>
-    <%= f.submit %>
-  </p>
- 
+  <div class="actions">
+    <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
+  </div>
+  </div>
+ </table>
+
 <% end %>

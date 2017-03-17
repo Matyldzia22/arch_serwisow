@@ -1,7 +1,8 @@
 class BuildsController < ApplicationController
-	http_basic_authenticate_with name: "admin", password: "123", except: [:index, :show]
+	
+  before_action :authenticate_user!, except: [:index, :show]
 	def index
-		@builds = Build.all
+		@builds = Build.page(params[:page]).per(7)
 	end
 	def show
 		@build = Build.find(params[:id])

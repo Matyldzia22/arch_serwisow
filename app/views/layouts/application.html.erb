@@ -9,6 +9,19 @@
   </head>
 
   <body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+        <%= link_to "Architecture", root_path, :class => 'navbar-brand'%>
+        <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><%= link_to 'All builds', builds_path %></li>
+                </ul>
+        </div>
+
+  </div>
+
+  <div class="container modal-content">
     <%= yield %>
+    </div>
   </body>
 </html>
