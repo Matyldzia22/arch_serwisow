@@ -16,8 +16,16 @@
                 <ul class="nav navbar-nav">
                     <li><%= link_to 'All builds', builds_path %></li>
                 </ul>
-        </div>
-
+        
+        
+        <ul style="margin-right: 8px;margin-top:9px;" class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+        
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link glyphicon glyphicon-log-out' %>
+        </ul>
+        <% end %>
+        
+</div>
   </div>
 
   <div class="container modal-content">

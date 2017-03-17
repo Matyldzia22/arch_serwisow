@@ -8,3 +8,5 @@
 *Aplikacja zawiera informacje na temat budynków : ich nazwę, zdjęcie, styl architektoniczny oraz kraj.*
 *Użytkownik, który jest zalogowany może dodawać i edytować budynki.*
 *Natomiast użytkownicy, którzy nie są zalogowani mogą wyświetlić bazę wszystkich budynków.*
+
+
